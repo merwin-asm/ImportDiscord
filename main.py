@@ -30,7 +30,7 @@ dump = input("")
 
 url = f"https://discord.com/api/v9/channels/{channel_id}/messages?limit={limit}"
 url_2 = f"https://discord.com/api/v9/channels/{channel_id}/messages?limit=100"
-appd_url = f"https://discord.com/api/v9/channels/1041260688972197888/messages?before=__before__&limit=100"
+appd_url = f"https://discord.com/api/v9/channels/{channel_id}/messages?before=__before__&limit=100"
 headers = {
         "authorization" : token,
         "user-agent" : "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
