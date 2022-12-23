@@ -33,7 +33,7 @@ url_2 = f"https://discord.com/api/v9/channels/{channel_id}/messages?limit=100"
 appd_url = f"https://discord.com/api/v9/channels/{channel_id}/messages?before=__before__&limit=100"
 headers = {
         "authorization" : token,
-        "user-agent" : "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"
+        "user-agent" :"Mozilla/5.0 (Macintosh; PPC Mac OS X 10_8_3 rv:6.0) Gecko/20200429 Firefox/36.0"
         }
 
 
