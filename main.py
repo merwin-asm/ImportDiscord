@@ -46,14 +46,18 @@ else:
     buffer = 100
     res = r.get(url_2, headers = headers)
     print(f"STATS : {res} ")
-    data_ = json.loads(res.text)        
+    data_ = json.loads(res.text)    
+    data_.reverse()
     time.sleep(0.5)
     for e in range(0,times):
         prev = data_[-1]["id"]
         res = r.get(appd_url.replace("__before__",prev), headers = headers)
         print(f"STATS : {res} ")
-        data_ += json.loads(res.text)
+        t_ = json.loads(res.text)
+        t_.reverse()
+        data_ += t_
         time.sleep(1)
+    data_.reverse()
 
 if dump != "no":
     file =  open(dump,"x")
